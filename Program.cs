@@ -1,34 +1,43 @@
-﻿// Author: Morgan Jones
-// Date: 9/17/19
-//Project: Creating an Array.
-using System;
+﻿using System;
 
-namespace Deliverable_3__Arrays
+namespace Deliverable_3___Methods
 {
     class Program
     {
         static void Main(string[] args)
-            // creating an auto populated array
+
         {
-            int[] array = new int[25];
-
-            for (int i = 0; i < 25; i++)
+          string name;
+            // created a method
+            public void acceptdetails()
+                // user enters name
             {
-                array[i] = i + 1;
+                Console.WriteLine("\n Please enter your name: \t");
+                name = Console.ReadLine();
             }
-            // To display the array
-            foreach (int number in array)
+                // Takes the input and adds the hello:.
+            public void printdetails()
             {
-                int i = number;
-                Console.WriteLine("Element Value = {1}", i, number);
+                Console.WriteLine("Hello " + name);
             }
-            // To close the program
-            Console.WriteLine("Press any key to exit the program");
-            Console.ReadKey(true);
-            }
-} // Close
-    } 
 
-    
-    
+            // Allow the user to exit the program
+            Console.WriteLine(" Press any key to exit:");
+            Console.ReadLine();
+        }
+
+
+
+
+
+
+
+    }
+
+}
         
+
+
+
+    
+
